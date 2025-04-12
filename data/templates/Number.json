@@ -1,0 +1,82 @@
+{   
+    "English": {
+        "templates": [
+            "{article} {occupation}"
+        ],
+        "label": ["article", "occupation"],
+        "result_prepend_space": true,
+        "labels": {
+            "Sing": ["is"],
+            "Plur": ["are"]
+        },
+        "variables": {
+            "article": {
+                "Sing": ["The"],
+                "Plur": ["The"]
+            },
+            "occupation": {
+                "Sing": ["manager", "doctor", "clerk", "officer", "nurse", "woman", "man", "pilot", "architect", "actor", "minister"],
+                "Plur": ["managers", "doctors", "clerks", "officers", "nurses", "women", "men", "pilots", "architects", "actors", "ministers"]
+            }
+        }
+    },
+    "French": {
+        "templates": [
+            "{article}{occupation}"
+        ],
+        "label": ["article", "occupation"],
+        "result_prepend_space": true,
+        "labels": {
+            "Sing": ["est"],
+            "Plur": ["sont"]
+        },
+        "variables": {
+            "article": {
+                "Sing": [""],
+                "Plur": [""]
+            },
+            "occupation": {
+                "Sing": ["Le manager", "Le docteur", "L'employé", "L'officier", "L'infirmier", "La femme", "L'homme", "Le pilote", "L'architecte", "L'acteur", "Le ministre"],
+                "Plur": ["Les managers", "Les docteurs", "Les employés", "Les officiers", "Les infirmiers", "Les femmes", "Les hommes", "Les pilotes", "Les architectes", "Les acteurs", "Les ministres"]
+            }
+        }
+    },
+    "German": {
+        "templates": [
+            "{article} {occupation}"
+        ],
+        "label": ["article", "occupation"],
+        "result_prepend_space": true,
+        "labels": {
+            "Sing": ["ist"],
+            "Plur": ["sind"]
+        },
+        "variables": {
+            "article": {
+                "Sing": ["Der"],
+                "Plur": ["Die"]
+            },
+            "occupation": {
+                "Sing": ["Manager", "Arzt", "Angestellter", "Offizier", "Krankenpfleger", "Mann", "Pilot", "Architekt", "Schauspieler", "Minister", "Manager"],
+                "Plur":  ["Manager", "Ärzte", "Angestellten", "Offiziere", "Krankenpfleger", "Männer", "Piloten", "Architekten", "Schauspieler", "Minister", "Manager"]
+            }
+        }
+    },
+    "Turkish": {
+        "templates": [
+            "{occupation} sonraki adımlardan emin"
+        ],
+        "label": ["occupation"],
+        "result_prepend_space": true,
+        "labels": {
+            "Sing": ["değil"],
+            "Plur": ["değiller"]
+        },
+        "variables": {
+            "occupation": {
+                "Sing": ["Müdür", "Doktor", "Memur", "Hemşire", "Kadın", "Adam", "Pilot", "Mimar", "Aktör", "Bakan", "Öğretmen", "Mühendis"],
+                "Plur": ["Müdürler", "Doktorlar", "Memurlar", "Hemşireler", "Kadınlar", "Adamlar", "Pilotlar", "Mimarlar", "Aktörler", "Bakanlar", "Öğretmenler", "Mühendisler"]
+            }
+        }
+    }
+}
