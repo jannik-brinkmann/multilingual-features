@@ -1,8 +1,27 @@
 # Large Language Models Share Representations of Latent Grammatical Concepts Across Typologically Diverse Languages
  
-## Resources
-- [Aya-23-8B](https://huggingface.co/jbrinkma/sae-aya-23-8b-layer16) and [Llama-3-8B](https://huggingface.co/jbrinkma/sae-llama-3-8b-layer16) sparse autoencoders
-- [Universal Dependencies](https://universaldependencies.org)
+This repository contains code, data, and links to autoencoders for replicating the experiments of the paper [Large Language Models Share Representations of Latent Grammatical Concepts Across Typologically Diverse Languages](https://arxiv.org/abs/2501.06346).
+
+## Setup
+
+**Counterfactual Data.** 
+We design datasets consisting of minimal pairs of inputs that differ only with respect to the presence of a grammatical concept. 
+For example, we generate counterfactual pairs that elicit singular or plural verbs based on the grammatical number of the subject:
+
+a. The parents near the cars were  
+b. The parent near the cars was
+
+This is an adaptation and translation of data from [Arora et al. (2024)](https://arxiv.org/abs/2402.12560). 
+
+**Universal Dependencies.** 
+For our experiments, we selected 23 languages from Universal Dependencies 2.1 (UD; [Nivre et al., 2017](https://aclanthology.org/E17-5001/)), a multilingual treebank containing dependency-parsed sentences. 
+These correspond to the 23 languages that Aya-23 was trained on. 
+The dataset can be downloaded at [Universal Dependencies](https://universaldependencies.org).
+Each word in each sentence in UD is annotated with its part of speech and morphosyntactic features, as defined in the UniMorph schema.
+
+**Sparse Autoencoders.** To run experiments with Llama-3-8B or Aya-23-8B, you will need to either train or download sparse autoencoders for each model. You can download dictionaries for [Aya-23-8B](https://huggingface.co/jbrinkma/sae-aya-23-8b-layer16) and [Llama-3-8B](https://huggingface.co/jbrinkma/sae-llama-3-8b-layer16) from HuggingFace. 
+
+## Demo Notebooks
 
 ## Citation
 If you use any of the code or ideas presented here, please cite our paper:
